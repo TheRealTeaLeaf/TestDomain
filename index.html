@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	
-<!-- OneTrust Cookies Consent Notice start 
-<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="34dd088a-b745-419c-973a-3b0b31c82758-test"></script>
-<script type="text/javascript">
-function OptanonWrapper() { }
-</script>
-<!-- OneTrust Cookies Consent Notice end -->
 
 <script>
 	function CreateCookies()
@@ -39,6 +32,7 @@ function OptanonWrapper() { }
 		ExpDate.setTime(ExpDate.getTime() + 1000*60*60*24*7);
 		var cookieStr = CookieName + "=" + CookieValue + "; " +  "path=/" + "; " + "expires=" + ExpDate.toUTCString();
 		document.cookie = cookieStr;
+		alert("cookies!!!")
 	}
 }</script>
 
@@ -48,22 +42,6 @@ function OptanonWrapper() { }
 	
 		<p>This page dropes some cookies in your browser :( </p>
 		<body onload="CreateCookies()"></body>
-<!--	
-		<form name="CreateCookieForm"> 
-		  neeew Cookie Name:<br>
-		  <input type="text" name="CookieName"><br>
-		  Cookie Value:<br>
-		  <input type="text" name="CookieValue"><br>
-		  LifeSpan in Days:<br>
-		  
-		  <input type="text" name="CookieLifeSpan"><br>
-		  <button name="CreateCookieButton"> Create Cookie</button><br>
-		  <br>
-		  <select name="CookieSelector"></select><br>
-		  <button name="DeleteCookieButton">Delete Cookie</button><br>
-		  <br>
-		</form>
--->	
-		
+	
 	</body>
 </html>
