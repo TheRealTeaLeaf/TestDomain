@@ -11,8 +11,6 @@ function OptanonWrapper() { }
 
 <script src="script.js"></script>
 <script>
-function CreateCookies()
-{
 	var CookieName = "targetingCookie1";
 	var CookieValue = "value1";
 	var ExpDate = new Date();
@@ -40,15 +38,13 @@ function CreateCookies()
 	ExpDate.setTime(ExpDate.getTime() + 1000*60*60*24*7);
 	var cookieStr = CookieName + "=" + CookieValue + "; " +  "path=/" + "; " + "expires=" + ExpDate.toUTCString();
 	document.cookie = cookieStr;
-}
-
-</script>
+}</script>
 
 
 	</head>
 	<body>
 	
-
+		<p>This page dropes some cookies in your browser :( </p>
 <!--		
 		<form name="CreateCookieForm"> 
 		  neeew Cookie Name:<br>
