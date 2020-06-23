@@ -1,4 +1,37 @@
 
+function CreateCookies()
+{
+	var CookieName = "targetingCookie1";
+	var CookieValue = "value1";
+	var ExpDate = new Date();
+	ExpDate.setTime(ExpDate.getTime() + 1000*60*60*24*7);
+	var cookieStr = CookieName + "=" + CookieValue + "; " +  "path=/" + "; " + "expires=" + ExpDate.toUTCString();
+	document.cookie = cookieStr;	
+	
+	var CookieName = "targetingCookie2";
+	var CookieValue = "value2";
+	var ExpDate = new Date();
+	ExpDate.setTime(ExpDate.getTime() + 1000*60*60*24*7);
+	var cookieStr = CookieName + "=" + CookieValue + "; " +  "path=/" + "; " + "expires=" + ExpDate.toUTCString();
+	document.cookie = cookieStr;
+	
+	var CookieName = "functionalCookie1";
+	var CookieValue = "value3";
+	var ExpDate = new Date();
+	ExpDate.setTime(ExpDate.getTime() + 1000*60*60*24*7);
+	var cookieStr = CookieName + "=" + CookieValue + "; " +  "path=/" + "; " + "expires=" + ExpDate.toUTCString();
+	document.cookie = cookieStr;
+	
+	var CookieName = "performanceCookie1";
+	var CookieValue = "value4";
+	var ExpDate = new Date();
+	ExpDate.setTime(ExpDate.getTime() + 1000*60*60*24*7);
+	var cookieStr = CookieName + "=" + CookieValue + "; " +  "path=/" + "; " + "expires=" + ExpDate.toUTCString();
+	document.cookie = cookieStr;
+}
+
+
+
 function CookieCreate()
 {
 	var CookieName = CreateCookieForm["CookieName"].value;
