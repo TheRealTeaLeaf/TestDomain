@@ -28,6 +28,11 @@ body{
 	position: relative;
 }
 
+.container .nav-link{
+	position: relative;
+	z-index: 99999;
+}
+
 .panel{
 	content: "";
 	position: absolute;
