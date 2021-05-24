@@ -7,46 +7,52 @@
 </head>
 <body>
       
-    <div class="container boder text-center mt-4">
-        <div class="d-flex justify-content-center">
-            <ul class="nav bg-light" role="tablist">
-                <li class="nav-item">
-                    <a href="#sec1" id="sec1-tab" class="nav-link active" aria-selected="true" data-tobble="tab" role="tab">Global News & GDPR Enforcement</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#sec2" id="sec1-tab" class="nav-link" aria-selected="false" data-tobble="tab" role="tab">Rakuten Group Global policies</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#sec3" id="sec1-tab" class="nav-link" aria-selected="false" data-tobble="tab" role="tab">Privacy Performance Heat Map</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#sec4" id="sec1-tab" class="nav-link" aria-selected="false" data-tobble="tab" role="tab">Rakuten Group Privacy Improvement Tasks</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#sec5" id="sec1-tab" class="nav-link" aria-selected="false" data-tobble="tab" role="tab">Privacy Operations test</a>
-                </li>	
-            </ul>
-        </div>
-        
-        <div class="tab-content">
-            <div class="tab-pane fade show active" id="sec1" aria-labelledby="sec1-tab" role="tabpanel">
-                Sec 1
-            </div>
-            <div class="tab-pane fade" id="sec2" aria-labelledby="sec2-tab" role="tabpanel">
-                Sec 2
-            </div>
-            <div class="tab-pane fade" id="sec3" aria-labelledby="sec3-tab" role="tabpanel">
-                Sec 3
-            </div>    
-            <div class="tab-pane fade" id="sec4" aria-labelledby="sec4-tab" role="tabpanel">
-                Sec 4
-            </div>
-            <div class="tab-pane fade" id="sec5" aria-labelledby="sec5-tab" role="tabpanel">
-                Sec 5
-            </div>
-        </div>
-
+ 
+    <div class="tab">
+      <button class="tablinks active" onclick="openTab(event, 'sec1')">Global News & GDPR Enforcement</button>
+      <button class="tablinks" onclick="openTab(event, 'sec2')">Rakuten Group Global Policies</button>
+      <button class="tablinks" onclick="openTab(event, 'sec3')">Privacy Performance Heat Map</button>
+      <button class="tablinks" onclick="openTab(event, 'sec4')">Rakuten Group Privacy Improvement Tasks</button>
+      <button class="tablinks" onclick="openTab(event, 'sec5')">Privacy Operations</button>
+	  <button class="tablinks" onclick="openTab(event, 'sec6')">User Settings</button>
     </div>
+
+    <!-- Tab content -->
+    <div id="sec1" class="tabcontent active" style="display:block">
+      <h3>Global News & GDPR Enforcement</h3>
+      <p>it comes soon</p>
+    </div>
+
+    <div id="sec2" class="tabcontent">
+      <h3>Rakuten Group Global policies</h3>
+      <p>it comes soon</p>
+    </div>
+
+    <div id="sec3" class="tabcontent">
+      <h3>Privacy Performance Heat Map</h3>
+      <p>it comes soon</p>
+    </div>
+
+    <div id="sec4" class="tabcontent">
+      <h3>Rakuten Group Privacy Improvement Tasks</h3>
+      <p>it comes soon</p>
+    </div>
+    
+    <div id="sec5" class="tabcontent">
+      <h3>Privacy Operations</h3>
+      <p>it comes soon</p>
+    </div>
+    
+    <div id="sec6" class="tabcontent">
+      <h3>User Settings</h3>
+      
+	  <label for="usettings">Active User Settings:</label>
+	  <label for="usettings_value" id="usettings_value"></label><br><br>
+	  <label for="inputsettings">Input New Settings:</label>
+	  <input type="text" id="inputsettings_value" name="inputsettings_value">
+	  <button class="savesettings" onclick="SaveSettings()">Save User Settings</button>
+    </div>
+	
     
 </body>
 </html>
