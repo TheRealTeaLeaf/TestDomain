@@ -10,11 +10,19 @@ function OptanonWrapper() { }
 </script>
 <!-- OneTrust Cookies Consent Notice end for www.forbusiness.viber.com -->
 
+
+
     <script>
-      const changeLang = (languageCode) => {
-       document.documentElement.setAttribute("lang", languageCode);
-      };
-	  
+		function load_banner_js()
+		   {
+			  var script= document.createElement('script');
+			  script.src= '"https://cdn.cookielaw.org/scripttemplates/otSDKStub.js';
+			  head.appendChild(script);
+		   }
+		const changeLang = (languageCode) => {
+		   document.documentElement.setAttribute("lang", languageCode);
+		  };
+	  load_banner_js
     </script>
 	
 	<script src="test.js"></script>	
