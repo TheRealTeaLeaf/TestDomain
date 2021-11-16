@@ -10,12 +10,23 @@ function OptanonWrapper() { }
 </script>
 <!-- OneTrust Cookies Consent Notice end for www.europe.pay.rakuten.com -->
 
-
+    <script>
+      const changeLang = (languageCode) => {
+       document.documentElement.setAttribute("lang", languageCode);
+      };
+    </script>
+	
 	<script src="test.js"></script>	
     <link rel="stylesheet" href="test.css" />
 </head>
 <body>
       
+	  
+	<div>
+      <button onclick="changeLang('en')">English</button>
+      <button onclick="changeLang('ru')">Russian</button>
+      <button onclick="changeLang('ua')">Ukranian</button>
+    </div>
  
     <div class="tab">
       <button class="tablinks active" onclick="openTab(event, 'sec1')">Global News & GDPR Enforcement</button>
