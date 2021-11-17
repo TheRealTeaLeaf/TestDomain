@@ -10,32 +10,106 @@ function OptanonWrapper() { }
 </script>
 <!-- OneTrust Cookies Consent Notice end for www.forbusiness.viber.com -->
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
 
 
-    <script>
-		function load_banner_js()
-		   {
-			  var script= document.createElement('script');
-			  script.src= '"https://cdn.cookielaw.org/scripttemplates/otSDKStub.js';
-			  head.appendChild(script);
-		   }
-		const changeLang = (languageCode) => {
-		   document.documentElement.setAttribute("lang", languageCode);
-		  };
-	  load_banner_js
-    </script>
+
+
+
 	
 	<script src="test.js"></script>	
     <link rel="stylesheet" href="test.css" />
+	
+	
+	
+	
+	
+	
 </head>
 <body>
-      
-	  
-	<div>
-      <button onclick="location.href ='\en.html'">English</button>
-      <button onclick="location.href ='\ru.html'">Russian</button>
-      <button onclick="location.href ='\ua.html'">Ukranian</button>
+
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Languages 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="\en.html">English</a>
+      <a href="\ru.html">Russian</a>
+      <a href="\ua.html">Ukranian</a>
     </div>
+  </div> 
+</div>
+
+	
+	
+	
  
     <div class="tab">
       <button class="tablinks active" onclick="openTab(event, 'sec1')">Global News & GDPR Enforcement</button>
