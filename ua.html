@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+
+<!-- OneTrust Cookies Consent Notice start for www.forbusiness.viber.com -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/77ac4f51-803a-4155-a768-c458ff59bdee-test/OtAutoBlock.js" ></script>
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="77ac4f51-803a-4155-a768-c458ff59bdee-test" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end for www.forbusiness.viber.com -->
+
+
+
+    <script>
+		function load_banner_js()
+		   {
+			  var script= document.createElement('script');
+			  script.src= '"https://cdn.cookielaw.org/scripttemplates/otSDKStub.js';
+			  head.appendChild(script);
+		   }
+		const changeLang = (languageCode) => {
+		   document.documentElement.setAttribute("lang", languageCode);
+		  };
+	  load_banner_js
+    </script>
+	
+	<script src="test.js"></script>	
+    <link rel="stylesheet" href="test.css" />
+</head>
+<body>
+      
+	  
+	<div>
+      <button onclick="changeLang('en')">English</button>
+      <button onclick="changeLang('ru')">Russian</button>
+      <button onclick="changeLang('ua')">Ukranian</button>
+    </div>
+ 
+    <div class="tab">
+      <button class="tablinks active" onclick="openTab(event, 'sec1')">Global News & GDPR Enforcement</button>
+      <button class="tablinks" onclick="openTab(event, 'sec2')">Rakuten Group Global Policies</button>
+      <button class="tablinks" onclick="openTab(event, 'sec3')">Privacy Performance Heat Map</button>
+      <button class="tablinks" onclick="openTab(event, 'sec4')">Rakuten Group Privacy Improvement Tasks</button>
+      <button class="tablinks" onclick="openTab(event, 'sec5')">Cookie Policy</button>
+	  <button class="tablinks" onclick="openTab(event, 'sec6')">User Settings</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="sec1" class="tabcontent active" style="display:block">
+      <h3>Global News & GDPR Enforcement</h3>
+      <p>it comes soon</p>
+    </div>
+
+    <div id="sec2" class="tabcontent">
+      <h3>Rakuten Group Global policies</h3>
+      <p>it comes soon</p>
+    </div>
+
+    <div id="sec3" class="tabcontent">
+      <h3>Privacy Performance Heat Map</h3>
+      <p>it comes soon</p>
+    </div>
+
+    <div id="sec4" class="tabcontent">
+      <h3>Rakuten Group Privacy Improvement Tasks</h3>
+	  <img src="APPI2020forLP.png" />
+      <p>it comes soon</p>
+    </div>
+    
+    <div id="sec5" class="tabcontent">
+      <h3>Cookie Policy</h3>
+      
+	  <!-- OneTrust Cookies List start -->
+<div id="ot-sdk-cookie-policy"></div>
+<!-- OneTrust Cookies List end -->
+	  
+
+    </div>
+    
+    <div id="sec6" class="tabcontent">
+      <h3>User Settings</h3>
+      
+	  <label for="usettings">Active User Settings:</label>
+	  <label for="usettings_value" id="usettings_value"></label><br><br>
+	  <label for="inputsettings">Input New Settings:</label>
+	  <input type="text" id="inputsettings_value" name="inputsettings_value">
+	  <button class="savesettings" onclick="SaveSettings()">Save User Settings</button>
+    </div>
+	
+    
+</body>
+</html>
